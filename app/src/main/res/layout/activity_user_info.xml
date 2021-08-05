@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_user_info_back"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_return"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FB40E0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="作者信息"/>
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/sv_user_info"
+        android:layout_below="@id/rl_user_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:text="作者名称：ErrorCodes LZX\n作者QQ：514389135\n热爱二次元的作者，嘻嘻\n欢迎赞赏！\n↓↓↓↓↓"/>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_zz_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv_user_info"
+        android:src="@drawable/pic_zs_qr"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_zz_qr"
+        android:layout_alignParentBottom="true"
+        android:text="音乐下载器，可能会随时过期，作者会努力更新，且行且珍惜"/>
+
+
+</RelativeLayout>

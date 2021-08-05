@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadingActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp">
+        <ImageView
+            android:id="@+id/iv_soft_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_icon"/>
+        <TextView
+            android:id="@+id/tv_soft_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_soft_icon"
+            android:layout_marginStart="15dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="@string/soft_ware_title"/>
+        <TextView
+            android:id="@+id/tv_soft_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_soft_icon"
+            android:layout_marginStart="15dp"
+            android:textColor="#424242"
+            android:layout_below="@id/tv_soft_title"
+            android:text="@string/soft_ware_subtitle"
+            />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        >
+        <ProgressBar
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="软件加载中..."/>
+    </LinearLayout>
+</RelativeLayout>

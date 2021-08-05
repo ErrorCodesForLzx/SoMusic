@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_music_detail_root"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_music_detail_default"
+    tools:context=".MusicDetailActivity">
+    <RelativeLayout
+        android:id="@+id/rl_music_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_music_detail_back"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_return"/>
+        <TextView
+            android:id="@+id/iv_music_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#FB40E0"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="Sound Title here"/>
+        <TextView
+            android:id="@+id/iv_music_detail_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_music_detail_title"
+            android:layout_marginTop="8dp"
+            android:textColor="#6FA9FF"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            android:text="Sound Author here"/>
+
+        <ImageView
+            android:id="@+id/iv_music_detail_download"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/icon_download"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_music_detail_icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_music_detail_title"
+        android:src="@drawable/pic_loading"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/iv_music_detail_icon"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_music_detail_lyric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#6FA9FF"
+            android:text="这个是测试歌词\n歌词加载中..."/>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_music_detail_play"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#28FFFFFF"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/sb_music_play_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_music_play_thisProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="#6FA9FF"
+            android:layout_below="@id/sb_music_play_progress"
+            android:text="00:00"/>
+        <TextView
+            android:id="@+id/tv_music_play_max_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="#6FA9FF"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/sb_music_play_progress" android:text="99:99"/>
+
+        <ImageView
+            android:id="@+id/iv_music_play_control"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/sb_music_play_progress"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_play" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
